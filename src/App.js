@@ -4,11 +4,13 @@ import "./App.css";
 class App extends Component {
   state = {
     hours: "",
+    twelveHours: "",
     minutes: "",
     seconds: "",
     day: "",
     month: "",
-    year: ""
+    year: "",
+    formatSwitchTo12: false
   };
 
   componentDidMount = () => {
@@ -28,8 +30,12 @@ class App extends Component {
     let time = new Date();
     this.setState({
       hours: time.getHours(),
-      minutes: time.getMinutes(),
-      seconds: time.getSeconds(),
+      twelveHours:
+        time.getHours() > 12 ? time.getHours() - 12 : time.gethours(),
+      minutes:
+        time.getMinutes() < 10 ? `0${time.getMinutes()}` : time.getMinutes(),
+      seconds:
+        time.getSeconds() < 10 ? `0${time.getSeconds()}` : time.getSeconds(),
       day: time.getDate(),
       month: time.getMonth() + 1,
       year: time.getFullYear()
@@ -37,7 +43,15 @@ class App extends Component {
   };
 
   render() {
-    const { hours, minutes, seconds, day, month, year } = this.state;
+    const {
+      hours,
+      twelveHours,
+      minutes,
+      seconds,
+      day,
+      month,
+      year
+    } = this.state;
     return (
       <div className="App">
         <div>
