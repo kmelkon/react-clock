@@ -4,7 +4,7 @@
 
 A basic React clock showing the current time and date.
 
-<!-- Go **[here](https://romantic-knuth-651f53.netlify.com/)** for live demo. -->
+Go **[here](https://admiring-cori-0b0a58.netlify.com/)** for live demo.
 
 ## 👨‍💻 Tech stack
 
