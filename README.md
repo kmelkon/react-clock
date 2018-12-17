@@ -10,7 +10,6 @@ A basic React clock showing the current time and date.
 
 - [React](https://reactjs.org/) - A javascript library for building user interfaces
 - [create-react-app](https://github.com/facebook/create-react-app) - React project boilerplate
-- [Evergreen UI](https://evergreen.segment.com/) - Styled React components for easy prototyping
 
 ## Getting Started
 
@@ -42,8 +41,9 @@ npm install
 
 ## ⏰ TODO
 
-- [ ] Add 24h/12h switch
-- [ ] Add styles
+- [x] Add 24h/12h switch
+- [x] Add styles
+- [ ] Add a reusable header component
 
 ## 🖐 Contributing
 
