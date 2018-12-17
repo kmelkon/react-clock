@@ -1,0 +1,18 @@
+body,
+html,
+#root,
+.App {
+  height: 100%;
+  margin: 0;
+}
+
+@import url("https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou");
+
+body {
+  background: #ee9ca7; /* fallback for old browsers */
+  background: linear-gradient(
+    to right,
+    #103966,
+    #071729
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

@@ -61,17 +61,19 @@ class Clock extends Component {
       formatSwitchTo12
     } = this.state;
     return (
-      <div className="App">
-        <div>
-          {" "}
-          the current time is {formatSwitchTo12 ? twelveHours : hours}:{minutes}
-          :{seconds}
+      <div className="clock">
+        <div className="time">
+          {formatSwitchTo12 ? twelveHours : hours}:{minutes}:{seconds}
           {formatSwitchTo12 && (twelveHours < 12 ? " PM" : " AM")}
         </div>
-        <div>
-          today's date is {day}/{month}/{year}
+        {/* transform clock to 12h version after mid night */}
+        {/* currentHoursAP = (currentHoursAP == 0) ? 12 : currentHoursAP; */}
+        <div className="date">
+          {day}/{month}/{year}
         </div>
-        Switch {formatSwitchTo12 ? "back 24h format" : "to 12h format"}
+        <div>
+          Switch {formatSwitchTo12 ? "back 24h format" : "to 12h format"}
+        </div>
         <div>
           <label className="switch">
             <input
